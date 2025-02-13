@@ -67,7 +67,7 @@ In this task, you'll create an Azure Database for PostgreSQL resources for your 
 
       ![](images/dp01-10.png)      
 
-1. Under **Firewall rules**, select **&#65291; Add current client IP address (1)**. Select **Review + Create (2)**.
+1. Under **Firewall rules**, select **&#65291; Add current client IP address (1)** and then click on **Review + Create (2)**.
 
     ![Screenshot of the Azure portal showing the Azure Database for PostgreSQL page.](images/dp01-5.png)
 
