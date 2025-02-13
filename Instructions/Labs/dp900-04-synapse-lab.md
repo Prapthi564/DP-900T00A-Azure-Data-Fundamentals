@@ -190,7 +190,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 1. Navigat to **Data (1)**  page from the left navigation pane, select the  **Linked (2)**  tab and expand the  **Azure Data Lake Storage Gen 2 (3)**  hierarchy until you see the file storage for your Synapse workspace. Then select the file storage **fs<inject key="DeploymentID" enableCopy="false"/> (4)** to verify that a file named  **products.csv (5)**  has been copied to this location, as shown here:
     
-     ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/dp4-20.png)
+    ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/dp4-20.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
