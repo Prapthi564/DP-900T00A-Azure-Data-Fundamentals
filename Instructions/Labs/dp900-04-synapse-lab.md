@@ -199,7 +199,6 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
 
    <validation step="f63ac60a-1265-47c2-8043-4b696ac5ffbf" />     
     
-
 ### Task 3 : Use a SQL pool to analyze data
 
 Now that you've ingested some data into your workspace, you can use Synapse Analytics to query and analyze it. One of the most common ways to query data is to use SQL, and in Synapse Analytics you can use a  _SQL pool_  to run SQL code.
@@ -209,9 +208,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     ![](images/dp4-21.png)
     
 1. In the  **SQL Script 1**  pane that opens, review the SQL code that has been generated, which should be similar to this:
-    
-
-    
+        
     ```SQL
     -- This is auto-generated code
     SELECT
@@ -251,7 +248,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
     Now the results look like this:
 
-    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/dp4-23.png)
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/dp4-24.png)
 
      >**Note:** Please ignore the warnings in code.
  
@@ -311,11 +308,11 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 While SQL is a common language for querying structured datasets, many data analysts find languages like Python useful to explore and prepare data for analysis. In Azure Synapse Analytics, you can run Python (and other) code in a  _Spark pool_; which uses a distributed data processing engine based on Apache Spark.
 
-1. In Synapse Studio, select the **Manage** page.
-
-1. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
+1. In Synapse Studio, select the **Manage (1)** page then select the **Apache Spark pools (2)** tab, and then use the **&#65291; New (3)** icon to create a new Spark pool.
 
     ![](images/dp4-32.png)
+
+1. On the **New Apache Spark Pool** , create the Apache pool with the following settings:    
 
     - **Apache Spark pool name**: Enter **spark<inject key="DeploymentID" enableCopy="false"/> (1)**
     - **Node size family**: **Memory Optimized (2)**
@@ -332,7 +329,7 @@ While SQL is a common language for querying structured datasets, many data analy
 
     ![](images/dp4-34.png)
 
-1. In the **Notebook 1** pane that opens, in the **Attach to** list, select the ****spark<inject key="DeploymentID" enableCopy="false"/> (1)** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python) (2)**.
+1. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark<inject key="DeploymentID" enableCopy="false"/> (1)** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python) (2)**.
 
 1. Review the code in the first (and only) cell in the notebook, which should look like this: **(3)**
 
