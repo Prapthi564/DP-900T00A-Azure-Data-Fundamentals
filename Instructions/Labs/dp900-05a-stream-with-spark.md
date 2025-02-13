@@ -21,12 +21,22 @@ In this lab, you will perform the following tasks:
 
 ### Task 1: Create a Synapse Analytics workspace
     
-1. On the Azure portal **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
+1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 
-1. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
+    ![](images/dp1.png)
+
+1. Search for **Azure Synapse Analytics (1)** and select **Azure Synapse Analytics (2)**.
+
+    ![](images/dp4-1.png)
+
+1. On the **Azure Synapse Analytics** page, click on **Create (1)** drop down and then click on **Azure Synapse Analytics (2)**.
+
+    ![](images/dp4-2.png)
+
+1. Create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
-    - **Resource group**: *Select existing resource group, like "DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>"*
-    - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<inject key="DeploymentID" enableCopy="false"/>"*.
+    - **Resource group**: *Select existing resource group,  **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Workspace name**: Enter **synapse-ws-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**: *Select any available location*.
     - **Select Data Lake Storage Gen 2**: From subscription
     - **Account name**: *Create a new account with a unique name, for example "datalake<inject key="DeploymentID" enableCopy="false"/>"*.

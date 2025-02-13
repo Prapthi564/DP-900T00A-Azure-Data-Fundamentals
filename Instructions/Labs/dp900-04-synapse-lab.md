@@ -35,6 +35,10 @@ The exercise is designed to familiarize you with some key elements of a modern d
 
     ![](images/dp4-1.png)
 
+1. On the **Azure Synapse Analytics** page, click on **Create (1)** drop down and then click on **Azure Synapse Analytics (2)**.
+
+    ![](images/dp4-2.png)
+
 1. Create a new **Azure Synapse Analytics** resource with the following settings and click  **Create**.
     
     - Subscription: **Leave default Sybscription (1)**
