@@ -192,12 +192,12 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
      ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/dp4-20.png)
 
-  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-   <validation step="f63ac60a-1265-47c2-8043-4b696ac5ffbf" />     
+<validation step="f63ac60a-1265-47c2-8043-4b696ac5ffbf" />     
     
 ### Task 3 : Use a SQL pool to analyze data
 
