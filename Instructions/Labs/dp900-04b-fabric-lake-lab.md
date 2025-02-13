@@ -37,7 +37,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    >**Note:** The first time you use any Microsoft Fabric features, prompts with tips may appear. Dismiss these.
 
-## ## Create a lakehouse
+## Create a lakehouse
 
 Now that you have a workspace, it's time to create a data lakehouse for your data files.
 
