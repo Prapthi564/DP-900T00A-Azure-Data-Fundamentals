@@ -58,7 +58,7 @@ In this task, you will create an Azure Storage account in your Azure subscriptio
 
       ![](images/dp2-4.png)    
 
-1. On the Adavanced tab, make sure **enable hierarchical namespace** to support Azure Data Lake Storage Gen2 is unselected **(1)**. Then click on **Next (2)** twice to navigate to **Data protection** tab.      
+1. On the Advanced tab, make sure **enable hierarchical namespace** to support Azure Data Lake Storage Gen2 is unselected **(1)**. Then click on **Next (2)** twice to navigate to **Data protection** tab.      
 
     ![](images/dpm2-1.png)
   
@@ -108,7 +108,7 @@ In this task, you will create a blob container to store and manage data within y
 
     ![](images/dp2-14.png)
 
-1. Create a new directory named  **products** and click on **Ok**.
+1. Create a new directory named  **products (1)** and click on **Ok (2)**.
 
     ![](images/dp2-13.png)
     

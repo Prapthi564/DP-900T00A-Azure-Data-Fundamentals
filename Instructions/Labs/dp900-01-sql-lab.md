@@ -10,7 +10,7 @@ In this lab, you will perform:
 
 + Task 1: Provision an Azure SQL Database resource
 
-## Estimated timing: 30 minutes
+## Estimated timing: 15 minutes
 
 ## Architecture diagram
 
