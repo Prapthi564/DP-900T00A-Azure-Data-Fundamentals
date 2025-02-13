@@ -54,7 +54,7 @@ In this task, you will create an Azure Storage account in your Azure subscriptio
     - Region: **East US (4)**.
     - Performance:  **Standard (5)**
     - Redundancy:  **Locally-redundant storage(LRS) (6)**
-    - Click on **Next** twice, to navigate to **Advanced** tab.
+    - Click on **Next (7)** twice, to navigate to **Advanced** tab.
 
       ![](images/dp2-4.png)    
 
@@ -130,7 +130,7 @@ In this task, you will create a blob container to store and manage data within y
 
     ![](images/dp2-18.png)
     
-1. In the  **Upload blob**  panel, select the **Browse for files (1)**, navigate to **Dowloads (2)** then select **product1.json (3)** file you saved on your local computer previously and then click on **Open (4)**. 
+1. In the  **Upload blob**  panel, select the **Browse for files (1)**, navigate to **Downloads (2)** then select **product1.json (3)** file you saved on your local computer previously and then click on **Open (4)**. 
 
     ![](images/dp2-19.png)
 
@@ -177,7 +177,7 @@ In this task, you will use Azure Data Lake Store Gen2 to organize and manage acc
 
 1. In the **Data Lake Gen2 upgrade** page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.    
 
-1. Expand **Step 1(1)**, click on **Review and agree to changes (2)** then select the acknowledge check box **(3)** and then click on **Agree to changes (3)**. 
+1. Expand **Step 1(1)**, click on **Review and agree to changes (2)** then select the acknowledge check box **(3)** and then click on **Agree to changes (4)**. 
 
     ![](images/dpm2-3.png)
 
