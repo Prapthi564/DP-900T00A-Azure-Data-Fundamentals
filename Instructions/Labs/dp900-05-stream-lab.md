@@ -1,8 +1,7 @@
 # Lab 05: Explore Azure Stream Analytics
 
 ## Lab scenario
-In this lab, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
-Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
+In this lab, you will set up and explore Azure Stream Analytics by provisioning the necessary resources, configuring real-time data processing, and analyzing streaming data. You will use Azure Cloud Shell to automate resource creation, examine the setup in the Azure portal, and run a Stream Analytics job to process and store IoT data in real time.
 
 ## Lab objectives
 
@@ -18,9 +17,19 @@ In this lab, you will complete the following tasks:
 
 ![](images/dp900module(5).png)  
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+  - An active **Azure subscription** with permissions to create and manage resources.
+  - Access to **Azure Cloud Shell** (Bash or PowerShell) for executing Azure CLI commands.
+  - Basic knowledge of **Azure Stream Analytics** and real-time data processing concepts.
+
 ## Exercise 1: Analyze streaming data
 
 ### Task 1: Create Azure resources
+
+In this task, you will set up the necessary Azure resources for the lab, including an Azure IoT Hub, Storage Account, and Stream Analytics job. You will use Azure Cloud Shell to execute commands and automate resource creation.
 
 1. On the  Azure Portal, click on the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell.
 
@@ -73,6 +82,8 @@ In this lab, you will complete the following tasks:
 
 ### Task 2: Explore the Azure resources
 
+In this task, you will explore the Azure resources created for the lab, including an IoT Hub, Storage Account, and Stream Analytics job. You will review their configurations in the Azure portal, ensuring the correct setup for processing real-time streaming data.
+
 1.  In the  [Azure portal](https://portal.azure.com/), on the home page, select  **Resource groups**  to see the resource groups in your subscription.
 
 1. This should include the  **learnxxxxxx** resource group identified by the setup script.
@@ -112,6 +123,8 @@ In this lab, you will complete the following tasks:
     ![](images/dp5-11.png)
 
 ### Task 3:  Use the resources to analyze streaming data
+
+In this task, you will start the Stream Analytics job, simulate real-time data streaming from an IoT device, and analyze the processed results stored in an Azure Storage Account. You will also explore the output data in JSON format and verify that the Stream Analytics job processes messages in real time. Finally, you will stop the job after completing the analysis.
 
 1.  At the top of the  **Overview**  page of the Stream Analytics job, select the  **▷ Start job**  button.
 
