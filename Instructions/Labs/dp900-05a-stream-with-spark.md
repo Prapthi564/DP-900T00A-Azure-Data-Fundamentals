@@ -1,9 +1,10 @@
 # Lab 05a: Explore Spark Streaming in Azure Synapse Analytics
 
 ## Lab scenario 
-In this lab, you'll use *Spark Structured Streaming* and *delta tables* in Azure Synapse Analytics to process streaming data.
 
-## Lab objectives
+In this lab, you will provision an Azure Synapse Analytics workspace as a unified environment for data integration and analytics. You will create a Spark pool to enable distributed data processing and support large-scale data workloads. Additionally, you will explore stream processing using Spark Structured Streaming and Delta tables. Through a guided notebook, you will perform real-time data processing and analysis within your Synapse workspace.
+
+## Lab Objectives
 
 In this lab, you will perform the following tasks:
 
@@ -17,9 +18,22 @@ In this lab, you will perform the following tasks:
 
 ![](images/dp900module(5a).png)
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+- **Azure subscription**: An active Azure subscription with permissions to create and manage Synapse Analytics resources.
+- **Azure Cloud Shell**: Azure Cloud Shell access to execute commands and automate resource deployment.Azure Cloud Shell access to execute commands and automate resource deployment.
+- **Azure Stream Analytics**: Basic understanding of Azure Stream Analytics and real-time data processing.
+- **Spark**: Familiarity with Spark pools and distributed data processing in Synapse Analytics.
+
 ## Exercise 1: Provision a Synapse Analytics workspace and Spark Pool
 
+In this exercise, you will create an Azure Synapse Analytics workspace, set up a Spark pool for distributed data processing, and explore stream processing to analyze real-time data. Through these tasks, you will gain hands-on experience in configuring and working with Synapse Analytics for big data and streaming workloads.
+
 ### Task 1: Create a Synapse Analytics workspace
+
+In this task, you will create an Azure Synapse Analytics workspace, providing a unified environment for data integration and analytics.
     
 1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 
@@ -69,7 +83,7 @@ In this lab, you will perform the following tasks:
  
  ### Task 2: Create a Spark pool
 
-To use Spark to process streaming data, you need to add a Spark pool to your Azure Synapse workspace.
+In this task, you will create a **Spark pool** in your **Azure Synapse Analytics workspace** to enable distributed data processing. This Spark pool will be essential for handling streaming data and performing large-scale analytics in the next tasks.
 
 1. In Synapse Studio, select the **Manage (1)** page. Select the **Apache Spark pools (2)** tab, and then use the **&#65291; New (3)** icon to create a new Spark pool.
 
@@ -90,7 +104,7 @@ To use Spark to process streaming data, you need to add a Spark pool to your Azu
    
 ### Task 3: Explore stream processing
 
-To explore stream processing with Spark, you'll use a notebook that contains Python code and notes to help you perform some basic stream processing with Spark Structured Streaming and delta tables.
+In this task, you will explore stream processing using Spark Structured Streaming and Delta tables. You will work with a notebook containing Python code and guided instructions to perform real-time data processing and analysis within your Azure Synapse Analytics workspace.
 
 1. Right click on the followin link [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb), then click on **Copy link** and then paste it on the browser to download notebook.
 
