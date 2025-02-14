@@ -2,9 +2,9 @@
 
 ## Lab scenario
 
-In this lab, you'll use the already provisioned Azure Synapse Analytics workspace in your Azure subscription, to ingest and query data.
+In this lab, you will explore an Azure Synapse Analytics workspace, ingest data, and analyze it using both SQL pools and Spark pools. Through these tasks, you will gain hands-on experience in data ingestion, querying, and distributed data processing within Synapse Analytics.
 
-## Lab objectives
+## Lab Objectives
 
 In this lab, you will perform the following tasks:
 
@@ -19,13 +19,20 @@ In this lab, you will perform the following tasks:
 
 ![](images/dp900lab4.png)  
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+  - **Azure Subscription**: An active Azure subscription with the required permissions to create and manage Synapse Analytics resources.
+  - **Azure Portal Access**: Permissions to access and navigate the Azure Portal and Synapse Studio
+
 ## Exercise 1: Provision an Azure Synapse Analytics workspace
 
-In this exercise, you'll use the Azure Synapse Analytics workspace to ingest and analyze some data.
-
-The exercise is designed to familiarize you with some key elements of a modern data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. 
+In this exercise, you'll use the Azure Synapse Analytics workspace to ingest and analyze some data. The exercise is designed to familiarize you with some key elements of a modern data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. 
 
 ### Task 1: Explore an Azure Synapse Analytics workspace
+
+In this task, you will create a Azure Synapse Analytics workspace.
 
 1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 
@@ -81,7 +88,7 @@ The exercise is designed to familiarize you with some key elements of a modern d
 
 ### Task 2 : Ingest data
 
-One of the key tasks you can perform with Azure Synapse Analytics is to define  _pipelines_  that transfer (and if necessary, transform) data from a wide range of sources into your workspace for analysis.
+In this task, you will define **pipelines** that transfer (and, if necessary, transform) data from various sources into your Synapse Analytics workspace for analysis.
 
 1. In Synapse Studio, on the **Home** page, select **Ingest** to open the **Copy Data tool** tool.
 
@@ -205,7 +212,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 ### Task 3 : Use a SQL pool to analyze data
 
-Now that you've ingested some data into your workspace, you can use Synapse Analytics to query and analyze it. One of the most common ways to query data is to use SQL, and in Synapse Analytics you can use a  _SQL pool_  to run SQL code.
+In this task, you will use a **SQL pool** in Synapse Analytics to query and analyze the ingested data. SQL is one of the most common ways to interact with data, and Synapse Analytics provides a SQL pool to efficiently run your queries.
 
 1. In Synapse Studio, right-click the  **products.csv (1)**  file in the file storage for your Synapse workspace, point to  **New SQL script (2)**, and select  **Select TOP 100 rows (3)**.
 
@@ -310,7 +317,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 ### Task 4 : Use a Spark pool to analyze data
 
-While SQL is a common language for querying structured datasets, many data analysts find languages like Python useful to explore and prepare data for analysis. In Azure Synapse Analytics, you can run Python (and other) code in a  _Spark pool_; which uses a distributed data processing engine based on Apache Spark.
+In this task, you will use a **Spark pool** in Azure Synapse Analytics to analyze data using Python and other languages. While SQL is commonly used for querying structured datasets, Spark pools provide a distributed data processing engine based on Apache Spark, enabling flexible data exploration and preparation.
 
 1. In Synapse Studio, select the **Manage (1)** page then select the **Apache Spark pools (2)** tab, and then use the **&#65291; New (3)** icon to create a new Spark pool.
 
