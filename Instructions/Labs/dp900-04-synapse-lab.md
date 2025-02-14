@@ -318,14 +318,14 @@ While SQL is a common language for querying structured datasets, many data analy
 
 1. On the **New Apache Spark Pool** , create the Apache pool with the following settings:    
 
-    - **Apache Spark pool name**: Enter **spark<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - **Node size family**: **Memory Optimized (2)**
-    - **Node size**: **Small (4 vCores / 32 GB) (3)**
-    - **Autoscale**: **Enabled (4)**
-    - **Number of nodes**: **3----3 (5)**
+    - Apache Spark pool name: Enter **spark<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Node size family: **Memory Optimized (2)**
+    - Node size: **Small (4 vCores / 32 GB) (3)**
+    - Autoscale: **Enabled (4)**
+    - Number of nodes: **3----3 (5)**
     - Click on **Reviw+create (6)**
 
-      ![](images/dp4-33.png)    
+      ![](images/dp5a-8.png)    
 
 1. Then click on **Create**, then wait for it to deploy (which may take a few minutes).
 

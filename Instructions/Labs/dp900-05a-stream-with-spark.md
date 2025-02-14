@@ -34,56 +34,118 @@ In this lab, you will perform the following tasks:
     ![](images/dp4-2.png)
 
 1. Create a new **Azure Synapse Analytics** resource with the following settings:
-    - **Subscription**: *Your Azure subscription*
-    - **Resource group**: *Select existing resource group,  **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Workspace name**: Enter **synapse-ws-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**: *Select any available location*.
-    - **Select Data Lake Storage Gen 2**: From subscription
-    - **Account name**: *Create a new account with a unique name, for example "datalake<inject key="DeploymentID" enableCopy="false"/>"*.
-    - **File system name**: *Create a new file system with a unique name, for example "fs<inject key="DeploymentID" enableCopy="false"/>"*.
+    - Subscription: Leave your Azure subscription (1)
+    - Resource group: Select existing resource group,  **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Manage resource group: Leave blank **(3)**
+    - Workspace name: Enter **synapse-ws-<inject key="DeploymentID" enableCopy="false"/> (4)**
+    - **Region**: **Central US (5)**
+    - Select Data Lake Storage Gen 2: **From subscription (6)**
+    - Account name: Enter **datalake<inject key="DeploymentID" enableCopy="false"/> (7)**
+    - File system name: Enter **fs<inject key="DeploymentID" enableCopy="false"/> (8)**
+    - Click on **Review+create (9)**
     
-    ![](images/DP900_lab5a_1.png)
+      ![](images/dp5a-2.png)
     
-1. When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
+1. Then select **Create** to create the workspace.
 
 1. Wait for the workspace to be created - this may take five minutes or so.
 
-1. When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
+1. When deployment is complete, click on **Go to respurce group** to go to the resource group that was created and notice that it contains your **Synapse Analytics workspace** and  **Data Lake storage account**.
+
+    ![](images/dp5a-3.png)
    
-1.  Select your Synapse workspace, and in its  **Overview**  page, scroll down to the  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
+1.  Select your Synapse workspace **synapse-ws-<inject key="DeploymentID" enableCopy="false"/>**.
+
+    ![](images/dp5a-4.png)
+
+1. On the  **Overview (1)**  page, scroll down to the  **Open Synapse Studio (2)**  card, select  **Open (3)**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
+
+    ![](images/dp5a-5.png)
     
 1.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
-    ![Synapse Studio](images/synapse-studio1.png)
+    ![Synapse Studio](images/dp5a-6.png)
     
  
  ### Task 2: Create a Spark pool
 
 To use Spark to process streaming data, you need to add a Spark pool to your Azure Synapse workspace.
 
-1. In Synapse Studio, select the **Manage** page.
+1. In Synapse Studio, select the **Manage (1)** page. Select the **Apache Spark pools (2)** tab, and then use the **&#65291; New (3)** icon to create a new Spark pool.
 
-1. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
-    - **Apache Spark pool name**: "sparkpool<inject key="DeploymentID" enableCopy="false"/>"
-    - **Node size family**: Memory Optimized
-    - **Node size**: Small (4 vCores / 32 GB)
-    - **Autoscale**: Enabled
-    - **Number of nodes** 3----3
-1. Review and create the Spark pool, and then wait for it to be deployed (which may take a few minutes).
+    ![Synapse Studio](images/dp5a-7.png)
+
+1. Creta a **New Apache Spark pool** with the following settings:
+
+    - Apache Spark pool name: **spark<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Node size family: **Memory Optimized (2)**
+    - Node size: **Small (4 vCores / 32 GB) (3)**
+    - Autoscale: **Enabled (4)**
+    - Number of nodes: **3----3 (5)**
+    - Click on **Review+create (6)**
+
+      ![Synapse Studio](images/dp5a-8.png)
+
+1. Click on **Create**, then wait for it to be deployed (which may take a few minutes).
    
-   ![](images/DP900_lab5a_2.png)
-
 ### Task 3: Explore stream processing
 
 To explore stream processing with Spark, you'll use a notebook that contains Python code and notes to help you perform some basic stream processing with Spark Structured Streaming and delta tables.
 
-1. Download the [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb) notebook to the lab (if the notebook is opened as a text file in your browser, save it to a local folder then open the downloaded file in **File Explorer** then click on **View** check the box of **File name extensions** then rename it as **Structured Streaming and Delta Tables.ipynb** if .txt extension is there remove it)
+1. Right click on the followin link [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb), then click on **Copy link** and then paste it on the browser to download notebook.
 
-1. In Synapse Studio, select the **Develop** page.
+1. Press **Ctrl+S** to save the file to your local folder.
 
-1. On the **&#65291;** menu, select **&#8612; Import**, and select the **Structured Streaming and Delta Tables.ipynb** file in the file explorer.
+1. Click on **Downloads (1)** and then select **Save (2)**.
 
-1. Follow the instructions in the notebook to attach it to your Spark pool and run the code cells it contains to explore various ways to use Spark for stream processing.
+    ![Synapse Studio](images/dp5a-9.png)
+
+1. Open the downloaded file in **File Explorer** then click on **View (1)**, check the box of **File name extensions (2)**.
+
+    ![Synapse Studio](images/dp5a-10.png)
+
+1. Right click on the file name **(1)** and then click on **Rename (2)**.
+
+    ![Synapse Studio](images/dp5a-11.png)
+
+1. Rename it as **Structured Streaming and Delta Tables.ipynb**, if `.txt` extension is there remove it.
+
+    ![Synapse Studio](images/dp5a-12.png)
+
+1. Clicl on **Yes** to change the file extension.
+
+    ![Synapse Studio](images/dp5a-13.png)
+
+1. In Synapse Studio, select the **Develop (1)** page. On the **&#65291; (2)** menu, select **&#8612; Import (3)**.
+
+    ![Synapse Studio](images/dp5a-14.png)
+
+
+1. Navigate to **Downloads (1)**, then select the **Structured Streaming and Delta Tables.ipynb (2)** file in the file explorer and then click on **Open (3)**.
+
+    ![Synapse Studio](images/dp5a-15.png)
+
+1. In the **Notebook** pane that opens, in the **Attach to** list, select the **spark<inject key="DeploymentID" enableCopy="false"/> (1)** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python) (2)**. You can see the **Notebook** **(3)**.
+
+    ![Synapse Studio](images/dp5a-16.png)
+
+1. Follow the instructions in the notebook to attach it to your Spark pool.
+
+1. **Run** the each code cells it contains to explore various ways to use Spark for stream processing.
+
+    ![Synapse Studio](images/dp5a-17.png)
+
+1. Wait untill the cell runs completely, this may take some time.
+
+    ![Synapse Studio](images/dp5a-18.png)
+
+1. **Run** each cell one after the other.
+
+1. At last you will be getting ouput similar to this.
+
+    ![Synapse Studio](images/dp5a-19.png)
+
+    ![Synapse Studio](images/dp5a-20.png)    
 
   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
