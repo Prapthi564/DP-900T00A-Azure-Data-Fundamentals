@@ -124,7 +124,7 @@ In this task, you will explore stream processing using Spark Structured Streamin
 
 1. Rename it as **Structured Streaming and Delta Tables.ipynb**, if `.txt` extension is there remove it.
 
-    ![Synapse Studio](images/dp5a-12.png)
+    ![Synapse Studio](images/dp5b-35.png)
 
 1. Clicl on **Yes** to change the file extension.
 

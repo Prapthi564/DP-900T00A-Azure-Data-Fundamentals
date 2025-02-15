@@ -2,7 +2,8 @@
 # Lab 05b: Explore Azure Synapse Data Explorer
 
 ## Lab scenario
-In this lab, you'll use Azure Synapse Data Explorer to analyze time-series data.
+
+In this lab, you will explore Azure Synapse Analytics by setting up a workspace, configuring a Data Explorer pool, ingesting data into a database, and using Kusto Query Language (KQL) to query the data. This hands-on experience will help you understand how Synapse Analytics can be used for big data analysis and real-time querying.
 
 ## Lab objectives
 
@@ -21,7 +22,11 @@ In this lab, you will perform the following tasks:
 
 ## Exercise 1: Provision a Synapse Analytics workspace and Data Explorer pool
 
+In this exercise, you will provision an Azure Synapse Analytics workspace and create a Data Explorer pool. These resources will provide a scalable environment for managing and analyzing large datasets using Kusto Query Language (KQL).
+
 ### Task 1: Create a Synapse Analytics workspace
+
+In this task, you will verify the pre-created Synapse Analytics workspace, Data Lake storage account, and Apache Spark pool within the resource group. You will also navigate to Synapse Studio from the Synapse workspace to begin managing and analyzing data.
 
 1. On the Azure portal, search for **Resource group (1)** and select for **Resource group (2)** from the services.
 
@@ -55,6 +60,8 @@ In this lab, you will perform the following tasks:
     
 ### Task 2: Create a Data Explorer pool
 
+In this task, you will create a Data Explorer pool in Synapse Studio. This pool is optimized for fast data ingestion and real-time analytics. 
+
 1. In Synapse Studio, select the **Manage (1)** page then select the **Data Explorer pools (preview) (2)** tab, and then use the **&#65291; New (3)** icon to create a new pool.
 
     ![](images/dp5b-8.png)
@@ -77,6 +84,8 @@ In this lab, you will perform the following tasks:
     ![](images/dp5b-12.png)
 
 ### Task 3: Create a database and ingest data
+
+In this task, you will create a database within the Data Explorer pool and ingest data into it. This will allow you to store and analyze data using Kusto Query Language (KQL) in Synapse Studio.
 
 1. In Synapse Studio, select the **Data (1)** page. Ensure that the **Workspace (2)** tab is selected, and if necessary, select the **&#8635;** icon at the top-left of the page to refresh the view so that **Data Explorer databases (3)** is listed.
 
@@ -115,9 +124,11 @@ In this lab, you will perform the following tasks:
 
     ![](images/dp5b-18.png)
 
-1. Click on the **Database icon** and select **Get data**.
+1. Click on the **Database icon**. 
 
     ![](images/dp5b-21.png)
+
+1. Select **Get data**.    
     
 1. Select the **Local File**.
 
@@ -166,6 +177,8 @@ In this lab, you will perform the following tasks:
     >**Tip**: In this example, you imported a very small amount of batch data from a file, which is fine for the purposes of this exercise. In reality, you can use Data Explorer to analyze much larger volumes of data; and since you enabled stream ingestion, you could also have configured Data Explorer to ingest data into the table from a streaming source such as Azure Event Hubs.
 
 ### Task 4: Use Kusto query language to query the table in Synapse Studio
+
+In this task, you will use Kusto Query Language (KQL) to query data stored in your Data Explorer database within Synapse Studio. 
 
 1. Close the **Azure Data Explorer** browser tab and return to the tab containing **Synapse Studio**.
 
