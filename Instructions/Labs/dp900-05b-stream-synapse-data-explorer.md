@@ -20,6 +20,14 @@ In this lab, you will perform the following tasks:
 
 ![](images/dp900module(5b).png)
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+  - **Azure Subscription**: An active Azure subscription with the required permissions to create and manage Synapse Analytics resources.
+  - **Azure Portal Access**: Permissions to access and navigate the Azure Portal and Synapse Studio
+  - **Sample Data for Ingestion**: A dataset (CSV file) for data ingestion into the Data Explorer database.
+
 ## Exercise 1: Provision a Synapse Analytics workspace and Data Explorer pool
 
 In this exercise, you will provision an Azure Synapse Analytics workspace and create a Data Explorer pool. These resources will provide a scalable environment for managing and analyzing large datasets using Kusto Query Language (KQL).
