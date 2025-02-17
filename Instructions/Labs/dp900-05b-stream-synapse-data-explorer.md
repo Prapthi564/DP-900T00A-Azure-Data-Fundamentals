@@ -101,7 +101,7 @@ In this task, you will create a database within the Data Explorer pool and inges
 
 1. On the **Data Explorer database(preview)** page, provide the following details and then click on **Create (3)**.
 
-    - Pool name: Enter **dxpool<inject key="DeploymentID" enableCopy="false" />(1)** 
+    - Pool name: Select **dxpool<inject key="DeploymentID" enableCopy="false" />(1)** 
     - Name: **iot-data (2)**
 
       ![Data Explorer](images/dp5b-11.png)
@@ -154,7 +154,19 @@ In this task, you will create a database within the Data Explorer pool and inges
 
    ![Data Explorer](images/dp5b-26.png)
 
-1. Click on **Finish** and then **Close**.
+1. Click on **Edit** button to modify the Column name.
+
+   ![Data Explorer](images/dp5b-41.png)
+
+1. Rename `Column1` as **`Time`** **(1)**, `Column2` as **`Device`** **(2)** then `Column3` as **`Value`** **(3)** and then click on **Apply (4)**.
+
+   ![Data Explorer](images/dp5b-42.png)
+
+1. Ensure the column data types have been correctly identified as `Time (datetime), Device (string), and Value (long)` **(1)**. Select the **First row header (2)** to ignore the first record and then click on **Finish (3)**.  
+
+   ![Data Explorer](images/dp5b-43.png)
+
+1. Click on **Close**.
 
 1. In Azure Data Explorer, on the **Query** tab, ensure that the **iot-data (1)** database is selected and then in the query pane, enter the following query. **(2)**
 
@@ -170,7 +182,7 @@ In this task, you will create a database within the Data Explorer pool and inges
     | 2022-01-01T00:00:01Z | Dev2 | 4 |
     | ... | ... | ... |
 
-    ![Data Explorer](images/dp5b-27.png)    
+    ![Data Explorer](images/dp5b-44.png)    
 
     >**Note**: If your results match this, you have successfully created the **devices** table from the data in the file.
 
@@ -182,7 +194,7 @@ In this task, you will use Kusto Query Language (KQL) to query data stored in yo
 
 1. Close the **Azure Data Explorer** browser tab and return to the tab containing **Synapse Studio**.
 
-1. On the **Data** page, expand the **iot-data (1)** database and its **Tables (2)** folder. Veify that **devices (3)** table is present.
+1. On the **Data** page, expand the **iot-data (1)** database and its **Tables (2)** folder. Verify that **devices (3)** table is present.
 
    ![Data Explorer](images/dp5b-28.png)
 
@@ -201,41 +213,43 @@ In this task, you will use Kusto Query Language (KQL) to query data stored in yo
 
      >**Note**: Run the query, the results of the query contain the first 1000 rows of data.
 
-      ![Data Explorer](images/dp5b-31.png)      
+      ![Data Explorer](images/dp5b-45.png)      
 
 1. Modify the query as follows: **(1)**
 
     ```kusto
     devices
-    | where Column2 == 'Dev1'
+    | where Device == 'Dev1'
     ```
 
 1. Select **&#9655; Run (2)** to run the query. Then review the results, which should contain only the rows for the **Dev1** device. **(3)**
 
-     ![Data Explorer](images/dp5b-32.png) 
+     ![Data Explorer](images/dp5b-46.png) 
 
 1. Modify the query as follows: **(1)**
 
     ```kusto
     devices
-    | where Column2 == 'Dev1'
-    | where Column1 > datetime(2022-01-07)
+    | where Device == 'Dev1'
+    | where Time > datetime(2022-01-07)
     ```
 
 1. **Run (2)** the query and review the results, which should contain only the rows for the **Dev1** device later than **January 7th 2022**. **(3)**
 
-     ![Data Explorer](images/dp5b-33.png) 
+     ![Data Explorer](images/dp5b-47.png) 
 
-1. Modify the query as follows:
+1. Modify the query as follows: **(1)**
 
     ```kusto
     devices
-    | where Column1 between (datetime(2022-01-01 00:00:00) .. datetime(2022-07-01 23:59:59))
-    | summarize AvgVal = avg(Column3) by Column2
-    | sort by Column2 asc
+    | where Time between (datetime(2022-01-01 00:00:00) .. datetime(2022-07-01 23:59:59))
+    | summarize AvgVal = avg(Value) by Device
+    | sort by Device asc
     ```
 
-1. **Run** the query and review the results, which should contain the average device value recorded between January 1st and January 7th 2022 in ascending order of device name.
+1. **Run (2)** the query and review the results, which should contain the average device value recorded between January 1st and January 7th 2022 in ascending order of device name. **(3)**
+
+     ![Data Explorer](images/dp5b-48.png) 
 
 1. Close the KQL query tab, discarding your changes.
 
