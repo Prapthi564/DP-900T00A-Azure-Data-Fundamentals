@@ -201,15 +201,16 @@ In this task, you will define **pipelines** that transfer (and, if necessary, tr
     
 1. Navigat to **Data (1)**  page from the left navigation pane, select the  **Linked (2)**  tab and expand the  **Azure Data Lake Storage Gen 2 (3)**  hierarchy until you see the file storage for your Synapse workspace. Then select the file storage **fs<inject key="DeploymentID" enableCopy="false"/> (4)** to verify that a file named  **products.csv (5)**  has been copied to this location, as shown here:
     
-    ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/dp4-20.png)
+    ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/dp4-20.png)     
+    
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-<validation step="f63ac60a-1265-47c2-8043-4b696ac5ffbf" />     
-    
+<validation step="f63ac60a-1265-47c2-8043-4b696ac5ffbf" />
+
 ### Task 3 : Use a SQL pool to analyze data
 
 In this task, you will use a **SQL pool** in Synapse Analytics to query and analyze the ingested data. SQL is one of the most common ways to interact with data, and Synapse Analytics provides a SQL pool to efficiently run your queries.
