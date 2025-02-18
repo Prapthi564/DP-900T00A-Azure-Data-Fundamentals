@@ -211,7 +211,7 @@ The eventstream captures real-time taxi fare data and loads it into a table in y
 
 If you've finished exploring Real-Time Intelligence in Fabric, you can delete the workspace you created for this exercise.
 
-1. In the bar on the left, select the icon for your workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on ***Workspace settings (2)**.
+1. In the bar on the left, select the icon for your workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **Workspace settings (2)**.
 
      ![Screenshot of a KQL query.](./images/dp5c-23.png)  
 
@@ -225,10 +225,13 @@ If you've finished exploring Real-Time Intelligence in Fabric, you can delete th
 
 
 ## Review
+
 In this lab, you have completed:
 - Created the workspace
-- Created a KQL database
-- Created an eventstream
+- Created a eventstream
+- Created a eventhouse
 - Queried real-time data in a KQL database
-  
+- Removed the workspace
+
+
 ## You have successfully completed this lab
