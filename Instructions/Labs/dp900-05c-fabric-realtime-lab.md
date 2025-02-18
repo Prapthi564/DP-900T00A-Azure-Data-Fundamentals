@@ -1,9 +1,10 @@
 # Lab 05c: Explore real-time analytics in Microsoft Fabric
 
 ## Lab scenario
-In this lab you'll explore real-time analytics in Microsoft Fabric.
 
-## Lab objective
+In this lab, you will explore the process of working with event-driven data in Microsoft Fabric. You will start by setting up a workspace and then progress through the creation and management of eventstreams and eventhouses, which are central to capturing and storing event data. As you move through the lab, you will query the data captured in the eventhouse for insights. Finally, you will clean up your environment by removing the workspace, ensuring that all resources are properly decommissioned.
+
+## Lab Objective
 
 In this lab, you will perform:
 
@@ -14,15 +15,26 @@ In this lab, you will perform:
 + Task 5: Remove the workspace
 
 
-## Estimated timing: 25 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
 ![](images/5c.png)
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+- **Microsoft Fabric Account**: You need a valid Microsoft Fabric account to access the tools and resources required for this lab.
+
+- **Basic Knowledge of Event Streams**: Familiarity with the concept of event streams and event-driven architecture will be beneficial.
+
+- **Basic Understanding of Data Ingestion**: Knowledge of data ingestion and how data is captured, processed, and stored in a system will help you when creating an eventstream and an eventhouse.
+
+
 ### Task 1: Create the workspace
 
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
+In this task, you will create a workspace in Microsoft Fabric with the Fabric trial enabled. This workspace will serve as the central environment for managing your eventstreams, eventhouses, and other resources required for event-driven data processing.
 
 1. Navigate to [Microsft fabric](https://app.powerbi.com/) in the LabVM browser.
 
@@ -76,7 +88,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 ### Task 2: Create an eventstream
 
-Now you're ready to find and ingest real-time data from a streaming source. To do this, you'll start in the Fabric Real-Time Hub.
+In this task, you will create an eventstream in Microsoft Fabric to ingest real-time data from a streaming source. 
 
 > **Tip**: The first time you use the Real-Time Hub, some *getting started* tips may be displayed. You can close these.
 
@@ -103,7 +115,7 @@ Now you're ready to find and ingest real-time data from a streaming source. To d
 
 ### Task 3: Create an eventhouse
 
-The eventstream ingests the real-time stock data, but doesn't currently do anything with it. Let's create an eventhouse where we can store the captured data in a table.
+In this task, you will create an eventhouse to store the real-time stock data captured by the eventstream. 
 
 1. On the menu bar on the left, click on **elipsis(...)(1)** select **Create (2)**.
 
@@ -181,7 +193,7 @@ The eventstream ingests the real-time stock data, but doesn't currently do anyth
 
 ### Task 4: Query the captured data
 
-The eventstream captures real-time taxi fare data and loads it into a table in your KQL database. You can query this table to see the captured data.
+In this task, you will query the real-time taxi fare data that has been captured by the eventstream and stored in the KQL database within your eventhouse. 
 
 1. In the menu bar on the left, select your eventhouse database **Eventhouse<inject key="DeploymentID" enableCopy="false"/> (1)**, select the **queryset (2)** for your database. In the query pane, modify the first example query as shown here: **(3)**
 
@@ -209,7 +221,7 @@ The eventstream captures real-time taxi fare data and loads it into a table in y
 
 ### Task 5: Remove the workspace
 
-If you've finished exploring Real-Time Intelligence in Fabric, you can delete the workspace you created for this exercise.
+In this task, you will remove the workspace you created in Microsoft Fabric for this exercise. Deleting the workspace ensures that all resources associated with it, such as eventstreams, eventhouses, and any data stored, are cleaned up properly, preventing unnecessary usage and costs.
 
 1. In the bar on the left, select the icon for your workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **Workspace settings (2)**.
 

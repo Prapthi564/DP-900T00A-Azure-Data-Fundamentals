@@ -19,6 +19,9 @@ In this lab, you will perform the following tasks:
 
 ## Pre-requisites
 
+Before starting this lab, perform these steps:
+
+
 1. Navigate to [Microsft fabric](https://app.powerbi.com/) in the LabVM browser.
 
 1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject>(1)** and select **Submit (2)**.
@@ -47,9 +50,9 @@ In this lab, you will perform the following tasks:
 
       >**Note**: It will take 15 mins to get enable, please proceede with Exercises.    
 
-## Exercise 1: Visualize data with Power BI
-
 ### Task 1: Import data
+
+In this task, you will import data into Power BI Desktop by connecting to online datasets using URLs. The data you will import includes customer, product, and order data, all of which will be loaded into the data model for further analysis and reporting.
 
 1. Open the **Power BI Desktop** from the LabVM desktop.
 
@@ -140,7 +143,7 @@ In this lab, you will perform the following tasks:
     
 ### Task 2 : Explore a data model
 
-The three tables of data you've imported have been loaded into a data model, which you'll now explore and refine.
+In this task, you will explore the data model created from the three imported tables: customers, products, and orders. You will learn how to refine the relationships between the tables and make sure the data model is ready for analysis and reporting.
 
 1. In Power BI Desktop, on the left-side edge, select the  **Model**  tab, and then arrange the tables in the model so you can see them (you can hide the panes on the right side by using the  **>>**  icons):
     
@@ -185,7 +188,7 @@ The three tables of data you've imported have been loaded into a data model, whi
 
 ### Task 3 : Create a report
 
-Now you're almost ready to create a report. First you need to check some settings to ensure all visualizations are enabled.
+In this task, you will start creating a report in Power BI Desktop. Before diving into the creation of visualizations, you need to check and adjust the necessary settings to ensure that all visualizations are enabled and ready for use.
 
 1. Select **File** tab from top left corner.
 
@@ -264,9 +267,9 @@ Now you're almost ready to create a report. First you need to check some setting
 
 ## Review
 In this lab, you have completed:
-- Import data
-- Explore a data model
-- Create a report
+- Imported data
+- Explored a data model
+- Created a report
   
 ## You have successfully completed this lab
 
