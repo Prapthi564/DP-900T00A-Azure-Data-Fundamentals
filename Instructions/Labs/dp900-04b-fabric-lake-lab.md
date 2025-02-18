@@ -12,6 +12,8 @@ In this lab, you will perform:
 + Task 3: Ingest data
 + Task 4: Query data in a lakehouse
 + Task 5: Visualize data in a lakehouse
++ Task 6: Remove the workspace
+
 
 ## Estimated Timing: 25 minutes
 
@@ -25,7 +27,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. Navigate to [Microsft fabric](https://app.powerbi.com/) in the LabVM browser.
 
-1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject>(1)** and select **Submit (2)**.
+1. If prompted, in the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject>(1)** and select **Submit (2)**.
 
     ![The Power BI Desktop start screen](images/dp6-1.png)
 
@@ -218,6 +220,22 @@ Microsoft Fabric lakehouses organize all tables in a semantic data model, which 
   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
    <validation step="b016c5bb-cccd-4821-9464-697aa7036d09" />
+
+### Task 6: Remove the workspace
+
+If you've finished exploring Real-Time Intelligence in Fabric, you can delete the workspace you created for this exercise.
+
+1. In the bar on the left, select the icon for your workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on ***Workspace settings (2)**.
+
+     ![Screenshot of a KQL query.](./images/dp5c-23.png)  
+
+1. In the **General** section, select **Remove this workspace**.
+
+     ![Screenshot of a KQL query.](./images/dp5c-24.png)  
+
+1. Click on **Delete** do delete the workspace.
+
+     ![Screenshot of a KQL query.](./images/dp5c-25.png)     
 
 ## Review
 In this lab, you have completed:
