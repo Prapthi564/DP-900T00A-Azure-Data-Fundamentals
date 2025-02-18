@@ -1,0 +1,61 @@
+[
+  {
+    "Name": "DP-900T00A-Azure-Data-Fundamentals",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/LabIntro-V2.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-01-sql-lab.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod-new/Instructions/Labs/dp900-01a-postgresql-lab.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-01b-mysql-lab.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-02-storage-lab.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-03-cosmos-lab.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-04-synapse-lab.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-04b-fabric-lake-lab.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-05-stream-lab.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-05a-stream-with-spark.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-05b-stream-synapse-data-explorer.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-05c-fabric-realtime-lab.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-pbi-06-lab.md",
+        "Order": 13
+      }
+    ]
+  }
+]
