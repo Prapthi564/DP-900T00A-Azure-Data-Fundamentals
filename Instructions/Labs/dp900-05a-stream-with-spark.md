@@ -48,14 +48,14 @@ In this task, you will create an Azure Synapse Analytics workspace, providing a 
     ![](images/dp4-2.png)
 
 1. Create a new **Azure Synapse Analytics** resource with the following settings:
-    - Subscription: Leave your Azure subscription (1)
+    - Subscription: **Leave your Azure subscription (1)**
     - Resource group: Select existing resource group,  **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Manage resource group: Leave blank **(3)**
     - Workspace name: Enter **synapse-ws-<inject key="DeploymentID" enableCopy="false"/> (4)**
     - **Region**: **Central US (5)**
     - Select Data Lake Storage Gen 2: **From subscription (6)**
-    - Account name: Enter **datalake<inject key="DeploymentID" enableCopy="false"/> (7)**
-    - File system name: Enter **fs<inject key="DeploymentID" enableCopy="false"/> (8)**
+    - Account name: Click on **Create new**, then  enter **datalake<inject key="DeploymentID" enableCopy="false"/> (7)** and then select **Ok**
+    - File system name: Click on **Create new**, then enter **fs<inject key="DeploymentID" enableCopy="false"/> (8)** and then select **Ok**
     - Click on **Review+create (9)**
     
       ![](images/dp5a-2.png)
@@ -83,7 +83,7 @@ In this task, you will create an Azure Synapse Analytics workspace, providing a 
  
  ### Task 2: Create a Spark pool
 
-In this task, you will create a **Spark pool** in your **Azure Synapse Analytics workspace** to enable distributed data processing. This Spark pool will be essential for handling streaming data and performing large-scale analytics in the next tasks.
+In this task, you will create a Spark pool in your Azure Synapse Analytics workspace to enable distributed data processing. This Spark pool will be essential for handling streaming data and performing large-scale analytics in the next tasks.
 
 1. In Synapse Studio, select the **Manage (1)** page. Select the **Apache Spark pools (2)** tab, and then use the **&#65291; New (3)** icon to create a new Spark pool.
 
@@ -106,7 +106,7 @@ In this task, you will create a **Spark pool** in your **Azure Synapse Analytics
 
 In this task, you will explore stream processing using Spark Structured Streaming and Delta tables. You will work with a notebook containing Python code and guided instructions to perform real-time data processing and analysis within your Azure Synapse Analytics workspace.
 
-1. Right click on the followin link [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb), then click on **Copy link** and then paste it on the browser to download notebook.
+1. Right click on the following link [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb), then click on **Copy link** and then paste it on the browser to download notebook.
 
 1. Press **Ctrl+S** to save the file to your local folder.
 
@@ -124,7 +124,7 @@ In this task, you will explore stream processing using Spark Structured Streamin
 
 1. Rename it as **Structured Streaming and Delta Tables.ipynb**, if `.txt` extension is there remove it.
 
-    ![Synapse Studio](images/dp5a-12.png)
+    ![Synapse Studio](images/dp5b-35.png)
 
 1. Clicl on **Yes** to change the file extension.
 
@@ -133,7 +133,6 @@ In this task, you will explore stream processing using Spark Structured Streamin
 1. In Synapse Studio, select the **Develop (1)** page. On the **&#65291; (2)** menu, select **&#8612; Import (3)**.
 
     ![Synapse Studio](images/dp5a-14.png)
-
 
 1. Navigate to **Downloads (1)**, then select the **Structured Streaming and Delta Tables.ipynb (2)** file in the file explorer and then click on **Open (3)**.
 
