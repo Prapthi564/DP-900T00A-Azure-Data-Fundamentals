@@ -55,9 +55,9 @@ In this lab, you will perform the following tasks:
 
     ![The Power BI Desktop start screen](images/dp6-7.png)
 
-1. The application interface should look similar to this, select **Get Started**, if it is asking for the Email, select Cancel :
+1. The application interface should look similar to this, select **Get Started**.
     
-    ![The Power BI Desktop start screen](images/power-bi-start-1.png)
+    ![The Power BI Desktop start screen](images/dp6-48.png)
     
     Now you're ready to import the data for your report.
 
