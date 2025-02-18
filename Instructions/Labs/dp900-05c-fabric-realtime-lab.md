@@ -38,7 +38,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![The Power BI Desktop start screen](images/dp6-3.png)
 
-1. Click on **Gey Started**.
+1. Click on **Get Started**.
 
     ![The Power BI Desktop start screen](images/dp6-4.png)
 
