@@ -16,7 +16,7 @@ In this lab, you will perform:
 + Task 6: Remove the workspace
 
 
-## Estimated Timing: 25 minutes
+## Estimated Timing: 30 minutes
 
 ## Architecture diagram
 
