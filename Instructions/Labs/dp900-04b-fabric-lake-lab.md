@@ -244,5 +244,6 @@ In this lab, you have completed:
 - Ingested data
 - Queried data in a lakehouse
 - Visualized data in a lakehouse
+- Removed the workspace
   
 ## You have successfully completed this lab
