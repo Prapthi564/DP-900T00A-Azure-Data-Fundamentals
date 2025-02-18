@@ -8,7 +8,7 @@ In this lab, you'll use Microsoft Power BI Desktop to create a data model and a 
 In this lab, you will perform the following tasks:
 
 + Task 1: Import data
-+ Task 2: Explore a data model
++ Task 2: Explore a data model 
 + Task 3: Create a report
   
 ## Estimated timing: 30 minutes
