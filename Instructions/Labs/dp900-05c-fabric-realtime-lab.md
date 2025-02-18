@@ -70,7 +70,7 @@ In this task, you will create a workspace in Microsoft Fabric with the Fabric tr
 
     ![The Power BI Desktop start screen](images/dp4b-4.png)    
    
-1. Create a new workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/>**. Expand **Advanced** then select **Trail (2)** Licence mode and then click on **Apply (3)**.
+1. Create a new workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/> (1)**. Expand **Advanced** then select **Trail (2)** Licence mode and then click on **Apply (3)**.
 
     ![The Power BI Desktop start screen](images/dp4b-5.png)   
 
@@ -121,7 +121,7 @@ In this task, you will create an eventhouse to store the real-time stock data ca
 
     ![Screenshot of the eventstream canvas.](./images/dp5c-6.png)
 
-1. In the *New* page, under the *Real-Time Inteligence* section, select **Eventhouse**. 
+1. In the *New* page, scroll down under the *Real-Time Inteligence* section, select **Eventhouse**. 
 
     ![Screenshot of the eventstream canvas.](./images/dp5c-7.png)
 
@@ -195,7 +195,7 @@ In this task, you will create an eventhouse to store the real-time stock data ca
 
 In this task, you will query the real-time taxi fare data that has been captured by the eventstream and stored in the KQL database within your eventhouse. 
 
-1. In the menu bar on the left, select your eventhouse database **Eventhouse<inject key="DeploymentID" enableCopy="false"/> (1)**, select the **queryset (2)** for your database. In the query pane, modify the first example query as shown here: **(3)**
+1. In the menu bar on the left, select your eventhouse database **Eventhouse<inject key="DeploymentID" enableCopy="false"/> (1)**, select the **Eventhouse<inject key="DeploymentID" enableCopy="false"/>** database, then select the **Eventhouse<inject key="DeploymentID" enableCopy="false"/>_ queryset (2)** queryset for your database **Eventhouse<inject key="DeploymentID" enableCopy="false"/>**. In the query pane, modify the first example query as shown here: **(3)**
 
     ```kql
     taxi
