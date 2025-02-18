@@ -1,7 +1,8 @@
 # Lab 04b: Explore data analytics in Microsoft Fabric
 
 ## Lab scenario
-In this lab, you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
+
+In this lab, you will explore the process of setting up and managing a data lakehouse environment. You will go through the essential steps to create a workspace, set up a lakehouse, ingest data, query it, visualize insights, and finally clean up resources. By the end of this lab, you will have a hands-on understanding of how to work with a lakehouse for data processing and analytics.
 
 ## Lab Objectives
 
@@ -15,15 +16,27 @@ In this lab, you will perform:
 + Task 6: Remove the workspace
 
 
-## Estimated Timing: 25 minutes
+## Estimated Timing: 30 minutes
 
 ## Architecture diagram
 
  ![](images/4b.png)  
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+- **Microsoft Fabric Account**: You need a valid Microsoft Fabric account to access the tools and resources required for this lab.
+
+- **Basic Knowledge of SQL**: A basic understanding of SQL will be helpful, especially when performing tasks such as querying data in the lakehouse
+
+- **Familiarity with Data Lakes and Data**: Warehouses: Understanding the concept of data lakes and data warehouses will help you better appreciate the role of a lakehouse.
+
+
+
 ## Task 1: Create the workspace
 
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
+In this task, you will set up a workspace in Microsoft Fabric with the Fabric trial enabled. This workspace will serve as the central environment for managing your lakehouse, data pipelines, notebooks, and other Fabric resources.
 
 1. Navigate to [Microsft fabric](https://app.powerbi.com/) in the LabVM browser.
 
@@ -71,7 +84,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 ## Create a lakehouse
 
-Now that you have a workspace, it's time to create a data lakehouse for your data files.
+In this task, you will create a data lakehouse within your workspace to store and manage your data files.
 
 1. In the **Fabric workspace** home page, click on  **+ New item**. Search for **Lakehouse (2)** and select **Lakehouse (3)**.
 
@@ -100,7 +113,7 @@ Now that you have a workspace, it's time to create a data lakehouse for your dat
 
 ## Task 3: Ingest data
 
-A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
+In this task, you will ingest data into your lakehouse using a Copy Data activity in a pipeline. This method allows you to extract data from a source and copy it into a file within the lakehouse for further processing and analysis.
 
 1. On the **Home** page for your lakehouse, select **Get data (1)** drop-down, select **New data pipeline (2)**.
 
@@ -157,7 +170,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 ## Task 4: Query data in a lakehouse
 
-Now that you have ingested data into a table in the lakehouse, you can use SQL to query it.
+In this task, you will use SQL to query the data that you have ingested into a table in the lakehouse. Querying data allows you to retrieve, filter, and analyze the information stored in your lakehouse for insights and decision-making.
 
 1. At the top right of the Lakehouse page, switch from **Lakehouse** view to the **SQL analytics endpoint** for your lakehouse.
 
@@ -178,7 +191,7 @@ Now that you have ingested data into a table in the lakehouse, you can use SQL t
 
 ## Task 5: Visualize data in a lakehouse
 
-Microsoft Fabric lakehouses organize all tables in a semantic data model, which you can use to create visualizations and reports.
+In this task, you will create visualizations and reports using the data stored in your Microsoft Fabric lakehouse.
 
 1. At the bottom left of the page, under the **Explorer** pane, select the **Model layouts (1)** tab to see the data model for the tables in the lakehouse (this includes system tables as well as the **taxi_rides (2)** table).
 
@@ -223,7 +236,7 @@ Microsoft Fabric lakehouses organize all tables in a semantic data model, which 
 
 ### Task 6: Remove the workspace
 
-If you've finished exploring Real-Time Intelligence in Fabric, you can delete the workspace you created for this exercise.
+In this task, you will delete the workspace you created for this exercise. Removing the workspace will clean up all associated resources, including the lakehouse, data pipelines, and reports, ensuring that no unnecessary storage or costs accumulate.
 
 1. In the bar on the left, select the icon for your workspace **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on ***Workspace settings (2)**.
 
