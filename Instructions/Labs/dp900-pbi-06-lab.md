@@ -222,6 +222,12 @@ In this task, you will start creating a report in Power BI Desktop. Before divin
 
      >**Note**: In this exercise, you have used Power BI Desktop to ingest data, create a data model, and use interactive visualizations to create a report. If you have a  [Power BI service](https://www.powerbi.com/)  subscription, you can sign into your account and publish the report to a Power BI workspace.
 
+  > **Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+   <validation step="9bcb34ed-c80a-479b-add9-231776c2e3df" />
+
 ## Review
 In this lab, you have completed:
 - Imported data
