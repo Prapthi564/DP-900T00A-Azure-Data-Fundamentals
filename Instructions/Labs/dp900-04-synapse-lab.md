@@ -13,18 +13,11 @@ In this lab, you will perform the following tasks:
 + Task 3: Use a SQL pool to analyze data
 + Task 4: Use a Spark pool to analyze data
   
-## Estimated timing: 30 minutes
+## Estimated timing: 45 minutes
 
 ## Architecture diagram
 
 ![](images/dp900lab4.png)  
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-  - **Azure Subscription**: An active Azure subscription with the required permissions to create and manage Synapse Analytics resources.
-  - **Azure Portal Access**: Permissions to access and navigate the Azure Portal and Synapse Studio
 
 ## Exercise 1: Provision an Azure Synapse Analytics workspace
 
@@ -231,7 +224,6 @@ In this task, you will use a **SQL pool** in Synapse Analytics to query and anal
             FORMAT = 'CSV',
             PARSER_VERSION='2.0'
         ) AS [result]
-    
     ```
     
     This code opens a rowset from the text file you imported and retrieves the first 100 rows of data.
@@ -352,7 +344,6 @@ In this task, you will use a **Spark pool** in Azure Synapse Analytics to analyz
     ##, header=True
     )
     display(df.limit(10))
-    
     ```
 
     ![](images/dp4-35.png)
@@ -366,7 +357,7 @@ In this task, you will use a **Spark pool** in Azure Synapse Analytics to analyz
     
     ![Image showing the product count chart view](images/dp4-36.png)
     
-1. Uncomment the  **header=True**  line (because the products.csv file has the column headers in the first line), so your code looks like this:
+1. Uncomment the  **header=True (1)**  line (because the products.csv file has the column headers in the first line), so your code looks like this:
     
    
     ```Python
@@ -376,34 +367,33 @@ In this task, you will use a **Spark pool** in Azure Synapse Analytics to analyz
     , header=True
     )
     display(df.limit(10))
-    
     ```
-    >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="DeploymentID" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
+     >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="DeploymentID" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
 
-1. **Rerun** the cell and verify that the results look like this:
+1. **Rerun (2)** the cell and verify that the results look like this: **(3)**
     
-    ![Image showing the product count chart view](images/dp4-37.png)
+    ![Image showing the product count chart view](images/dp4--37.png)
     
     > Notice that running the cell again takes less time, because the Spark pool is already started.
     
-1.  Under the results, use the  **＋ Code**  icon to add a new code cell to the notebook.
+1. Under the results, use the  **＋ Code**  icon to add a new code cell to the notebook.
     
-1.  In the new empty code cell, add the following code **(1)**:
+1. In the new empty code cell, add the following code **(1)**:
 
     ```Python
     df_counts = df.groupby(df.Category).count()
     display(df_counts)
     ```
     
-1.  Run the new code cell by clicking its  **▷ (2)**  icon, and review the results **(3)**, which should look similar to this:
+1. Run the new code cell by clicking its  **▷ (2)**  icon, and review the results **(3)**, which should look similar to this:
 
-       ![Image showing category count chart view](images/dp4-38.png) 
+    ![Image showing category count chart view](images/dp4-38.png)
      
-1.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
+1. In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
-     ![Image showing category count chart view](images/dp4-40.png)
+    ![Image showing category count chart view](images/dp4-40.png)
     
-1.  Close the  **Notebook 1**  pane and discard your changes.
+1. Close the  **Notebook 1**  pane and discard your changes.
 
      >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 

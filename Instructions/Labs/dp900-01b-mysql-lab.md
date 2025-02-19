@@ -9,24 +9,19 @@ In this lab, you will perform:
 
 + Task 1: Provision an Azure Database for MySQL resource
   
-## Estimated timing: 15 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
 ![](images/sc900module1b.png)  
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-   - **Azure Subscription** – An active Azure account with permissions to create and manage Azure Database for MySQL resources.
-   - **Basic MySQL Knowledge** – Understanding of MySQL databases, including tables and queries.
 
 ## Exercise 1: Provision an Azure Database for MySQL resource
 
 In this exercise, you'll provision an Azure Database for MySQL resource.
 
 ### Task 1: Provision an Azure Database for MySQL resource
+
+In this task, you'll create an Azure Database for MySQL resource.
 
 1. In the Azure portal, select **&#65291; Create a resource** from the upper left-hand corner.
 

@@ -16,23 +16,11 @@ In this lab, you will perform:
 + Task 6: Remove the workspace
 
 
-## Estimated Timing: 30 minutes
+## Estimated Timing: 45 minutes
 
 ## Architecture diagram
 
  ![](images/4b.png)  
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-- **Microsoft Fabric Account**: You need a valid Microsoft Fabric account to access the tools and resources required for this lab.
-
-- **Basic Knowledge of SQL**: A basic understanding of SQL will be helpful, especially when performing tasks such as querying data in the lakehouse
-
-- **Familiarity with Data Lakes and Data**: Warehouses: Understanding the concept of data lakes and data warehouses will help you better appreciate the role of a lakehouse.
-
-
 
 ## Task 1: Create the workspace
 
@@ -52,7 +40,7 @@ In this task, you will set up a workspace in Microsoft Fabric with the Fabric tr
 
     ![The Power BI Desktop start screen](images/dp6-3.png)
 
-1. Click on **Gey Started**.
+1. Click on **Get Started**.
 
     ![The Power BI Desktop start screen](images/dp6-4.png)
 
@@ -82,7 +70,7 @@ In this task, you will set up a workspace in Microsoft Fabric with the Fabric tr
 
    >**Note:** The first time you use any Microsoft Fabric features, prompts with tips may appear. Dismiss these.
 
-## Create a lakehouse
+## Task 2: Create a lakehouse
 
 In this task, you will create a data lakehouse within your workspace to store and manage your data files.
 
@@ -103,13 +91,6 @@ In this task, you will create a data lakehouse within your workspace to store an
     - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is stored externally.
     
       >**Note:** Currently, there are no tables or files in the lakehouse.
-
-  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
-   <validation step="edbc75e2-8634-4dbb-9a62-f9c74b4a9849" />
 
 ## Task 3: Ingest data
 
@@ -140,7 +121,6 @@ In this task, you will ingest data into your lakehouse using a Copy Data activit
     - Enable partition: **Unselected (5)**
 
       ![Screenshot of a new lakehouse.](./images/dp4b-14.png)
-
 
 1. On the **Review + save** page, ensure that the **Start data transfer immediately** option is selected, and then select **Save + Run**.
 
@@ -226,13 +206,6 @@ In this task, you will create visualizations and reports using the data stored i
 1. Navigate to your Fabric workspace **(1)** and there you can see the created report **(2)**.
 
     ![Screenshot of a SQL query.](./images/dp4b-31.png)
-
-  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
-   <validation step="b016c5bb-cccd-4821-9464-697aa7036d09" />
 
 ### Task 6: Remove the workspace
 

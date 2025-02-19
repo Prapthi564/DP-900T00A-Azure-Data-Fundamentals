@@ -11,21 +11,15 @@ In this lab, you will complete the following tasks:
 + Task 2: Explore the Azure resources
 + Task 3: Use the resources to analyze streaming data
   
-## Estimated timing: 15 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
 ![](images/dp900module(5).png)  
 
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-  - An active **Azure subscription** with permissions to create and manage resources.
-  - Access to **Azure Cloud Shell** (Bash or PowerShell) for executing Azure CLI commands.
-  - Basic knowledge of **Azure Stream Analytics** and real-time data processing concepts.
-
 ## Exercise 1: Analyze streaming data
+
+In this exercise, you will create Azure resources, explore the deployed resources, and utilize them to analyze streaming data.
 
 ### Task 1: Create Azure resources
 
@@ -47,7 +41,6 @@ In this task, you will set up the necessary Azure resources for the lab, includi
     
     ```
     git clone https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals dp-900
-    
     ```
 
     ![](images/dp5-3.png)    
@@ -56,7 +49,6 @@ In this task, you will set up the necessary Azure resources for the lab, includi
         
     ```
     cd dp-900/streaming
-    
     ```
     
     ![](images/dp5-4.png)    
@@ -65,7 +57,6 @@ In this task, you will set up the necessary Azure resources for the lab, includi
        
     ```
     bash setup.sh
-    
     ```
     
     ![](images/dp5-5.png)
@@ -140,14 +131,12 @@ In this task, you will start the Stream Analytics job, simulate real-time data s
     
     ```
     bash iotdevice.sh
-    
     ```  
 
 1. Wait for the simulation to start, which will be indicated by output like this:
      
     ```
     Device simulation in progress: 6%|#    | 7/120 [00:08<02:21, 1.26s/it]
-    
     ```
 
     ![](images/dp5-14.png)      
@@ -178,7 +167,6 @@ In this task, you will start the Stream Analytics job, simulate real-time data s
       {"starttime":"2021-10-23T01:02:13.2221657Z","endtime":"2021-10-23T01:02:23.2221657Z","device":"iotdevice","messages":2}
       {"starttime":"2021-10-23T01:02:14.5366678Z","endtime":"2021-10-23T01:02:24.5366678Z","device":"iotdevice","messages":3}
       {"starttime":"2021-10-23T01:02:15.7413754Z","endtime":"2021-10-23T01:02:25.7413754Z","device":"iotdevice","messages":4}
-    
      ```
 
      ![](images/dp5-23.png)        

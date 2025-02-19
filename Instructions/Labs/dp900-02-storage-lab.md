@@ -13,18 +13,11 @@ In this lab, you will perform following tasks:
 + Task 4: Explore Azure Files
 + Task 5: Explore Azure Tables
   
-## Estimated timing: 30 minutes
+## Estimated timing: 45 minutes
 
 ## Architecture diagram
 
 ![](images/sc900module2.png)  
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-  - **Azure Subscription** – An active Azure account with permissions to create and manage storage resources.
-  - **Basic Storage Concepts** – Understanding of cloud storage types such as blobs, files, and tables.
 
 ## Exercise 1: Explore Azure Storage
 
@@ -292,17 +285,17 @@ In this task, you will use Azure Tables to store key-value data for applications
     | PartitionKey **(1)** | String | 1  |
     | RowKey **(2)** | String | 1 |
     
-    - Select  **Add property**, and create a new property with the following values:
+1. Select  **Add property**, and create a new property with the following values:
     
-      |Property name | Type | Value |
-      | ------------ | ---- | ----- |
-      | Name **(3)** | String | Widget |
+    |Property name | Type | Value |
+    | ------------ | ---- | ----- |
+    | Name **(3)** | String | Widget |
     
-    - Add a second property with the following values:
+1. Add a second property with the following values:
     
-      |Property name | Type | Value |
-      | ------------ | ---- | ----- |
-      | Price **(4)** | Double | 2.99 |
+    |Property name | Type | Value |
+    | ------------ | ---- | ----- |
+    | Price **(4)** | Double | 2.99 |
     
 1. Select  **Insert (5)**  to insert a row for the new entity into the table.
 

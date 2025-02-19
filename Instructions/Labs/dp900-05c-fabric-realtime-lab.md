@@ -21,17 +21,6 @@ In this lab, you will perform:
 
 ![](images/5c.png)
 
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-- **Microsoft Fabric Account**: You need a valid Microsoft Fabric account to access the tools and resources required for this lab.
-
-- **Basic Knowledge of Event Streams**: Familiarity with the concept of event streams and event-driven architecture will be beneficial.
-
-- **Basic Understanding of Data Ingestion**: Knowledge of data ingestion and how data is captured, processed, and stored in a system will help you when creating an eventstream and an eventhouse.
-
-
 ### Task 1: Create the workspace
 
 In this task, you will create a workspace in Microsoft Fabric with the Fabric trial enabled. This workspace will serve as the central environment for managing your eventstreams, eventhouses, and other resources required for event-driven data processing.
@@ -77,14 +66,6 @@ In this task, you will create a workspace in Microsoft Fabric with the Fabric tr
     ![The Power BI Desktop start screen](images/dp4b-6.png)         
 
 1. When your new workspace opens, it should be empty.
-
-  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
-   <validation step="33d73ef0-92b4-403f-a638-7dc57dfffee4" />
-
 
 ### Task 2: Create an eventstream
 
@@ -175,7 +156,7 @@ In this task, you will create an eventhouse to store the real-time stock data ca
 
     ![Screenshot of and eventhouse with a table.](./images/dp5c-18.png)
 
-    The connection between the stream and the table has been created. Let's verify that in the eventstream.
+    >**Note**: The connection between the stream and the table has been created. Let's verify that in the eventstream.
 
 1. In the menu bar on the left, select the **Real-Time (1)** hub and then view the **My data streams (2)** page. In the **... (3)** menu for the **taxi-data-stream** stream, select **Open eventstream (4)**.
 
@@ -186,10 +167,6 @@ In this task, you will create an eventhouse to store the real-time stock data ca
     ![Screenshot an eventstream with a destination.](./images/dp5c-20.png)
 
      > **Tip**: Select the destination on the design canvas, and if no data preview is shown beneath it, select **Refresh**.
-
-     In this exercise, you've created a very simple eventstream that captures real-time data and loads it into a table. In a real soltuion, you'd typically add transformations to aggregate the data over temporal windows (for example, to capture the average price of each stock over five-minute periods).
-
-    Now let's explore how you can query and analyze the captured data.
 
 ### Task 4: Query the captured data
 
