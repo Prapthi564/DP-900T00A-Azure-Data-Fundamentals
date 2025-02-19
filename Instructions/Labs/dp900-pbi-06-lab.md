@@ -11,7 +11,7 @@ In this lab, you will perform the following tasks:
 + Task 2: Explore a data model 
 + Task 3: Create a report
   
-## Estimated timing: 30 minutes
+## Estimated timing: 45 minutes
 
 ## Architecture diagram
 
@@ -48,7 +48,7 @@ Before starting this lab, perform these steps:
 
     ![The Power BI Desktop start screen](images/dp6-6.png)
 
-      >**Note**: It will take 15 mins to get enable, please proceede with Exercises.    
+      >**Note**: It will take 15 mins to get enable, please proceede with Tasks.    
 
 ### Task 1: Import data
 
@@ -93,7 +93,6 @@ In this task, you will import data into Power BI Desktop by connecting to online
 
     ```
     https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/customers.csv
-    
     ```
 
      ![The Power BI Desktop start screen](images/dp6-12.png)    
@@ -114,7 +113,6 @@ In this task, you will import data into Power BI Desktop by connecting to online
   
     ```
     https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/products.csv
-    
     ```
 
      ![The Power BI Desktop start screen](images/dp6-15.png)       
@@ -132,7 +130,6 @@ In this task, you will import data into Power BI Desktop by connecting to online
    
     ```
     https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/orders.csv
-    
     ```
 
      ![The Power BI Desktop start screen](images/dp6-17.png)       
@@ -242,13 +239,13 @@ In this task, you will start creating a report in Power BI Desktop. Before divin
 
     ![A column chart drilled down to see products within a category](images/dp6-41.png)
     
-1. With the new column chart selected, in the  **Visualizations**  pane, select  **Pie chart**  and then resize the chart and position it next to the revenue by category column chart.
+1. With the new column chart selected, in the  **Visualizations**  pane, select  **Pie chart (1)**  and then resize the chart and position it next to the revenue by category column chart **(2)**.
     
-     ![A pie chart shows sales quantity by category](images/dp6-42.png)
+     ![A pie chart shows sales quantity by category](images/dp6--42.png)
     
-1. Select a blank area of the report, and then in the  **Fields**  pane, select the  **City**  field in the  **customers**  table and then select the  **Revenue**  field in the  **orders**  table. This results in a map showing sales revenue by city (rearrange and resize the visualizations as needed):
+1. Select a blank area of the report, and then in the  **Data**  pane, select the  **City (1)**  field in the  **customers**  table and then select the  **Revenue (2)**  field in the  **orders**  table. This results in a map showing sales revenue by city  **(3)** (rearrange and resize the visualizations as needed):
     
-     ![A map shows revenue by city](images/dp6-43.png)
+     ![A map shows revenue by city](images/dp6--43.png)
     
 12.  In the map, note that you can drag, double-click, use a mouse-wheel, or pinch and drag on a touch screen to interact. *Then select a specific city, and note that the other visualizations in the report are modified to highlight the data for the selected city*.
     
@@ -257,13 +254,6 @@ In this task, you will start creating a report in Power BI Desktop. Before divin
 13.  On the  **File**  menu, select  **Save**. Make sure to save it in the Documents folder. Then save the file with **chart-<inject key="DeploymentID" enableCopy="false" />.pbix** file name. You can open the file and explore data modeling and visualization further at your leisure.
 
      >**Note**: In this exercise, you have used Power BI Desktop to ingest data, create a data model, and use interactive visualizations to create a report. If you have a  [Power BI service](https://www.powerbi.com/)  subscription, you can sign into your account and publish the report to a Power BI workspace.
-
-  > **Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
-   <validation step="9bcb34ed-c80a-479b-add9-231776c2e3df" />
 
 ## Review
 In this lab, you have completed:

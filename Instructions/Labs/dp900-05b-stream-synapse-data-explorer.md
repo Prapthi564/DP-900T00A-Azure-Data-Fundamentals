@@ -14,19 +14,11 @@ In this lab, you will perform the following tasks:
 + Task 3: Create a database and ingest data
 + Task 4: Use Kusto query language to query the table in Synapse Studio
   
-## Estimated timing: 30 minutes
+## Estimated timing: 45 minutes
 
 ## Architecture diagram
 
 ![](images/dp900module(5b).png)
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-  - **Azure Subscription**: An active Azure subscription with the required permissions to create and manage Synapse Analytics resources.
-  - **Azure Portal Access**: Permissions to access and navigate the Azure Portal and Synapse Studio
-  - **Sample Data for Ingestion**: A dataset (CSV file) for data ingestion into the Data Explorer database.
 
 ## Exercise 1: Provision a Synapse Analytics workspace and Data Explorer pool
 

@@ -12,18 +12,11 @@ In this lab, you will perform the following tasks:
 + Task 3: View and create items
 + Task 4: Query the database
 
-## Estimated timing: 15 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
 ![](images/dp900lab3.png)
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-  - **Azure Subscription** – An active Azure account with permissions to create and manage Azure Cosmos DB resources.
-  - **Basic Database Concepts** – Understanding of NoSQL databases, collections, and querying data.
 
 ## Exercise 1: Explore Azure Cosmos DB
 

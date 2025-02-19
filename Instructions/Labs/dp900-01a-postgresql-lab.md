@@ -9,19 +9,11 @@ In this lab, you will perform:
 
 + Task 1: Provision an Azure Database for PostgreSQL resource
   
-## Estimated timing: 15 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
 ![](images/sc900module1a.png)  
-
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-   - **Azure Subscription** – An active Azure account with permissions to create and manage Azure Database for PostgreSQL resources.
-   - **Basic PostgreSQL Knowledge** – Understanding of PostgreSQL databases, including tables and queries.
-
 
 ## Exercise 1: Explore Azure Database for PostgreSQL
 

@@ -12,20 +12,12 @@ In this lab, you will perform the following tasks:
 + Task 2: Create a Spark pool
 + Task 3: Explore stream processing
   
-## Estimated timing: 15 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
 ![](images/dp900module(5a).png)
 
-## Lab Prerequisites
-
-Before starting this lab, you should have the following prerequisites:
-
-- **Azure subscription**: An active Azure subscription with permissions to create and manage Synapse Analytics resources.
-- **Azure Cloud Shell**: Azure Cloud Shell access to execute commands and automate resource deployment.Azure Cloud Shell access to execute commands and automate resource deployment.
-- **Azure Stream Analytics**: Basic understanding of Azure Stream Analytics and real-time data processing.
-- **Spark**: Familiarity with Spark pools and distributed data processing in Synapse Analytics.
 
 ## Exercise 1: Provision a Synapse Analytics workspace and Spark Pool
 
@@ -48,6 +40,7 @@ In this task, you will create an Azure Synapse Analytics workspace, providing a 
     ![](images/dp4-2.png)
 
 1. Create a new **Azure Synapse Analytics** resource with the following settings:
+
     - Subscription: **Leave your Azure subscription (1)**
     - Resource group: Select existing resource group,  **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Manage resource group: Leave blank **(3)**
@@ -59,7 +52,7 @@ In this task, you will create an Azure Synapse Analytics workspace, providing a 
     - Click on **Review+create (9)**
     
       ![](images/dp5a-2.png)
-    
+        
 1. Then select **Create** to create the workspace.
 
 1. Wait for the workspace to be created - this may take five minutes or so.
