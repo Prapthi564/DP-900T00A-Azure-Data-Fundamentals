@@ -16,40 +16,7 @@ In this lab, you will perform the following tasks:
 ## Architecture diagram
 
 ![](images/sc900module6.png)
-
-## Pre-requisites
-
-Before starting this lab, perform these steps:
-
-
-1. Navigate to [Microsft fabric](https://app.powerbi.com/) in the LabVM browser.
-
-1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject>(1)** and select **Submit (2)**.
-
-    ![The Power BI Desktop start screen](images/dp6-1.png)
-
-1. Complete the sign in process by clicking on **Continue**.
-
-    ![The Power BI Desktop start screen](images/dp6-2.png)
-
-1. If prompted, provide the **Job title** as **xxxx (1)**, **Business phone number** as some random 10 digits **(2)** and then **Get Started (3)**.
-
-    ![The Power BI Desktop start screen](images/dp6-3.png)
-
-1. Click on **Gey Started**.
-
-    ![The Power BI Desktop start screen](images/dp6-4.png)
-
-1. Once logged in, navigate to **Settings (1)** icon from the top right and select **Admin Portal (2)**.
-
-    ![The Power BI Desktop start screen](images/dp6-5.png)
-
-1. On the **Tenant settings (1)**, search for **map (2)** then expand **Map and filled map visuals (3)** then toggle the bar to **Enable (4)** and then click on **Apply (5)** to enable the settings.    
-
-    ![The Power BI Desktop start screen](images/dp6-6.png)
-
-      >**Note**: It will take 15 mins to get enable, please proceede with Tasks.    
-
+   
 ### Task 1: Import data
 
 In this task, you will import data into Power BI Desktop by connecting to online datasets using URLs. The data you will import includes customer, product, and order data, all of which will be loaded into the data model for further analysis and reporting.
