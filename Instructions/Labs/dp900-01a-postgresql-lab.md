@@ -1,4 +1,4 @@
-# Lab 01a: Explore Azure Database for PostgreSQL
+# Lab 1a: Explore Azure Database for PostgreSQL
 
 ## Lab scenario
 In this lab, you'll provide an Azure Database for PostgreSQL resources for your Azure subscription.
