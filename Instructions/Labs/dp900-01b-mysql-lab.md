@@ -1,4 +1,4 @@
-# Lab 01b: Explore Azure Database for MySQL
+# Lab 1b: Explore Azure Database for MySQL
 
 ## Lab scenario
 In this lab, you'll provision an Azure Database for MySQL resource in your Azure subscription.
