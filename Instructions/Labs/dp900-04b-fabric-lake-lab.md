@@ -1,4 +1,4 @@
-# Lab 04b: Explore data analytics in Microsoft Fabric
+# Lab 4b: Explore data analytics in Microsoft Fabric
 
 ## Lab scenario
 
