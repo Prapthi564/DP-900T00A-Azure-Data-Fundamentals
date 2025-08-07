@@ -1,5 +1,5 @@
 
-# Lab 05b: Explore Azure Synapse Data Explorer
+# Lab 5b: Explore Azure Synapse Data Explorer
 
 ## Lab scenario
 
