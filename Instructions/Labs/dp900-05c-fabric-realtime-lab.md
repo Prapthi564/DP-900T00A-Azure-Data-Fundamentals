@@ -1,4 +1,4 @@
-# Lab 05c: Explore real-time analytics in Microsoft Fabric
+# Lab 5c: Explore real-time analytics in Microsoft Fabric
 
 ## Lab scenario
 
