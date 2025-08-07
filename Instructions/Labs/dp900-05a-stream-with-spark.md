@@ -1,4 +1,4 @@
-# Lab 05a: Explore Spark Streaming in Azure Synapse Analytics
+# Lab 5a: Explore Spark Streaming in Azure Synapse Analytics
 
 ## Lab scenario 
 
